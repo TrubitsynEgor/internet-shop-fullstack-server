@@ -1,11 +1,10 @@
 import express from 'express'
-import { configDotenv } from 'dotenv'
+import 'dotenv/config'
 import sequelize from './db.js'
 import models from './models/models.js'
 import cors from 'cors'
 import router from './routes/index.js'
 
-configDotenv()
 const PORT = process.env.PORT || 5000
 
 const app = express()
